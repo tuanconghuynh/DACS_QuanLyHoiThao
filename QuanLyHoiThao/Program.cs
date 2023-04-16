@@ -29,7 +29,7 @@ builder.Services.AddDefaultIdentity<HoiThaoUser>(options => options.SignIn.Requi
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-//Yêu cầu password trên 6 ký tự
+//Định dạng password
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequireUppercase = false;
